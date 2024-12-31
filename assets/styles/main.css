@@ -11,7 +11,7 @@
   --text-color: #525b7a;
   --alt-text-color: #c2c7d6;
   --section-padding: 60px;
-  --h1-size: 72px;
+  --h1-size: 62px;
   --h2-size: 36px;
   --h3-size: 20px;
   --text-size: 20px;
@@ -126,6 +126,7 @@ header .container .logo a {
     top: 50px;
     right: 0;
     min-width: 180px;
+    background-color: var(--white);
     border: 1px solid rgba(220, 220, 220, 0.4);
   }
   .nav label img {
@@ -140,5 +141,30 @@ header .container .logo a {
   }
   .nav ul li:not(:last-child) {
     border: 1px solid rgba(220, 220, 220, 0.4);
+  }
+}
+
+.hero {
+  padding: var(--section-padding);
+  height: 500px;
+  background-image: url(../images/hero.webp);
+  background-position: top;
+  background-size: cover;
+}
+.hero .container {
+  height: 350px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: px;
+  text-align: center;
+  align-items: center;
+}
+.hero .container h1 {
+  font-size: var(--h1-size);
+  color: var(--title-color);
+}
+@media (max-width: 992px) {
+  .hero .container h1 {
+    font-size: 40px;
   }
 }
